@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram, Youtube, Linkedin } from "lucide-react";
+import { Facebook, Twitter, Instagram, Youtube, Linkedin, } from "lucide-react";
 import {FaReddit} from "react-icons/fa"
 
 
@@ -14,13 +14,13 @@ export const socialLinks = [
   {
     id: "twitter",
     name: "Twitter (X)",
-    url: "https://x.com/i/flow/login?redirect_after_login=%2FHelixconfe69272",
+    url: "https://x.com/Helixconfe69272",
     icon: <Twitter size={18} />,
   },
   {
     id: "instagram",
     name: "Instagram",
-    url: "https://www.instagram.com/webinars/?fbclid=IwY2xjawKk1ElleHRuA2FlbQIxMQBicmlkETFSR1JiUGNVWDhNYVc3WmpFAR4E3pihy03QnX-3yoOtQ1FakXOUM3Ngy-Cch3jZmkh32waFAnaI9ifq3Tgtmw_aem_aksxLvV8qc2W74y6hyLm7Q",
+    url: "https://www.instagram.com/helix_conferences/",
     icon: <Instagram size={18} />,
   },
   {
