@@ -1,5 +1,5 @@
-import React, { useEffect,useState } from "react";
-import { Sparkle} from "lucide-react";
+import React, { useEffect, useState } from "react";
+import { Sparkle } from "lucide-react";
 
 
 // import pharmacology from "../assets/tracks/pharmacology.jpg";
@@ -20,15 +20,15 @@ import pharmacoepidemiology from "../assets/tracks/pharmacoepidemiology.jpg";
 import curativeTherapeutics from "../assets/tracks/curativeTherapeutics.jpg";
 import pharmacoEconomics from "../assets/tracks/pharmacoEconomics.jpg";
 import pharmaEthics from "../assets/tracks/pharmaEthics.jpg";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 export const tracks = [
   {
     image: pharmacognosy,
     title: "Pharmacognosy",
     subtitle: "Natural Drug Sources",
     description:
-    <>
-     <Link to="/world-pharmaceutical-summit-orators" className="hover:text-one hover:decoration-accent
+      <>
+        <Link to="/world-pharmaceutical-summit-orators" className="hover:text-one hover:decoration-accent
              transition-colors duration-300"> Pharmacognosy</Link>  studies Medicinal compounds derived from natural sources like Plants, Bacteria, and Marine organisms. It explores the Chemical, Biological, and therapeutic properties of Natural products. This discipline supports the discovery of new Drugs by investigating Traditional remedies and Bioactive substances of Natural origin.",
       </>
   },
@@ -37,8 +37,8 @@ export const tracks = [
     title: "Pharmacovigilance",
     subtitle: "Drug Safety Monitoring",
     description:
-    <>
-      <Link to="/world-pharmaceutical-summit-orators"className="hover:text-one hover:decoration-accent
+      <>
+        <Link to="/world-pharmaceutical-summit-orators" className="hover:text-one hover:decoration-accent
              transition-colors duration-300"> Pharmacovigilance</Link> involves monitoring, detecting, and assessing adverse effects of Pharmaceutical Drugs. It ensures Medication safety by identifying risks like Side effects, Overdose, and Drug misuse. This track is critical in maintaining Public health, reducing harm, and guiding Regulatory decisions throughout a Drug’s lifecycle.",
       </>
   },
@@ -47,8 +47,8 @@ export const tracks = [
     title: "Traditional Medicine",
     subtitle: "Ancient Healing Practices",
     description:
-    <>
-      <Link to="/pharmaceutical-event-schedule"className="hover:text-one hover:decoration-accent
+      <>
+        <Link to="/pharmaceutical-event-schedule" className="hover:text-one hover:decoration-accent
              transition-colors duration-300" >Traditional Medicine</Link> draws from Centuries-old Cultural practices using Herbs, Minerals, and Spiritual therapies. It integrates Holistic healing to prevent and treat Diseases naturally. This track promotes Alternative Medicine's role in Modern Healthcare by studying Traditional Diagnostic methods and Plant-based Therapeutic systems across Global cultures.",
       </>
   },
@@ -57,8 +57,8 @@ export const tracks = [
     title: "Pharmaceutical Chemistry",
     subtitle: "Drug Molecule Design",
     description:
-    <>
-      <Link to="/venue" className="hover:text-one hover:decoration-accent
+      <>
+        <Link to="/venue" className="hover:text-one hover:decoration-accent
              transition-colors duration-300">Pharmaceutical Chemistry</Link> blends Organic Chemistry, Biochemistry, and Pharmacology to develop and optimize Drug compounds. It plays a key role in Drug discovery, Quality control, and Formulation. This track emphasizes creating safe, Stable, and Effective Medications with desired Therapeutic outcomes for diverse Patient populations.",
       </>
   },
@@ -74,8 +74,8 @@ export const tracks = [
     title: "Clinical Research",
     subtitle: "Trial and Evaluation",
     description:
-    <>
-    <Link to="/" className="hover:text-one hover:decoration-accent
+      <>
+        <Link to="/" className="hover:text-one hover:decoration-accent
              transition-colors duration-300" >Clinical Research</Link>investigates new Drugs through Preclinical and Clinical trial phases. It evaluates Safety, Efficacy, and Dosage in Human populations. This track emphasizes Protocol development, Data analysis, and Regulatory compliance, playing a Pivotal role in Translating Scientific discoveries into Approved Therapeutic interventions.",
       </>
   },
@@ -84,8 +84,8 @@ export const tracks = [
     title: "Drug Designing",
     subtitle: "Targeted Molecule Creation",
     description:
-    <>
-      <Link to="/venue" className="hover:text-one hover:decoration-accent
+      <>
+        <Link to="/venue" className="hover:text-one hover:decoration-accent
              transition-colors duration-300" >Drug</Link> Designing involves creating Therapeutic molecules that interact with Biological targets like Enzymes or Receptors. Using Computational modeling, Molecular docking, and Structure-activity relationships, this track enables Researchers to optimize Drug Efficacy and minimize Side effects through Precise Chemical structure modifications.",
       </>
   },
@@ -94,8 +94,8 @@ export const tracks = [
     title: "Clinical Pathology",
     subtitle: "Diagnostic Sample Analysis",
     description:
-    <>
-      <Link to="/pharmaceutical-event-schedule" className="hover:text-one hover:decoration-accent
+      <>
+        <Link to="/pharmaceutical-event-schedule" className="hover:text-one hover:decoration-accent
              transition-colors duration-300">Clinical Pathology</Link> analyzes Bodily fluids and Tissues to Diagnose Diseases and Monitor Drug effects. It provides Essential data for Evaluating Treatment safety and Effectiveness. This track links Pharmaceutical sciences with Diagnostic Medicine, guiding Personalized Treatment strategies and Improving Patient care outcomes with proper care.",
       </>
   },
@@ -104,8 +104,8 @@ export const tracks = [
     title: "Pharmacotherapeutics",
     subtitle: "Disease-Focused Treatment",
     description:
-    <>
-      <Link to="/about-global-pharmaceutical-conclave/" className="hover:text-one hover:decoration-accent
+      <>
+        <Link to="/about-global-pharmaceutical-conclave/" className="hover:text-one hover:decoration-accent
              transition-colors duration-300">Pharmacotherapeutics</Link> focuses on using Drugs to treat Diseases effectively. It integrates Pharmacology and Clinical care to Select optimal Medications, Dosages, and Regimens. This track emphasizes Personalized Treatment planning, Monitoring Therapeutic outcomes, and Minimizing Side effects to Enhance Patient well-being and Clinical success.",
       </>
   },
@@ -121,8 +121,8 @@ export const tracks = [
     title: "Pharmacoepidemiology",
     subtitle: "Drug Use in Populations",
     description:
-    <>
-      <Link to="https://helixconferences.com/buy-a-ticket" className="hover:text-one hover:decoration-accent
+      <>
+        <Link to="https://helixconferences.com/buy-a-ticket" className="hover:text-one hover:decoration-accent
              transition-colors duration-300">Pharmacoepidemiology </Link>studies how Drugs are used and their Effects across Populations. It evaluates Drug Safety, Usage patterns, and Health outcomes, Integrating Pharmacology and Epidemiology. This track provides Essential data for Improving Public Health, Guiding Regulatory decisions, and Supporting Safe, Effective Medication practices Globally.",
       </>
   },
@@ -138,8 +138,8 @@ export const tracks = [
     title: "Pharmaco Economics",
     subtitle: "Drug Cost Effectiveness",
     description:
-    <>
-     <Link to="/venue" className="hover:text-one hover:decoration-accent
+      <>
+        <Link to="/venue" className="hover:text-one hover:decoration-accent
              transition-colors duration-300">Pharmaco Economics</Link> assesses the Economic impact of Medications by Comparing Costs to Clinical outcomes. It Informs Policy decisions, Resource allocation, and Treatment prioritization. This track supports Sustainable Healthcare by Evaluating Drug value, Optimizing Spending, and Improving Patient access to Affordable, Effective Therapies.",
       </>
   },
@@ -148,8 +148,8 @@ export const tracks = [
     title: "Pharma Ethics",
     subtitle: "Ethical Drug Practices",
     description:
-    <>
-      <Link to="/" className="hover:text-one hover:decoration-accent
+      <>
+        <Link to="/" className="hover:text-one hover:decoration-accent
              transition-colors duration-300">Pharmaceutical Ethics</Link> ensures that Drug Development, Distribution, and Patient care follow Moral and Legal standards. This track emphasizes Informed consent, Patient rights, Research integrity, and Equitable access. Pharmacists and Researchers are Guided by Ethical principles to Prioritize Safety, Transparency, and Trust in Healthcare.",
       </>
   },
@@ -227,7 +227,7 @@ const StaticTracks = () => {
                 <h3 className="text-xl text-gray-600 font-semibold mb-3">
                   {track.subtitle}
                 </h3>
-                <p className="text-md text-gray-800 leading-relaxed">
+                <p className="text-md text-gray-800 leading-relaxed text-justify">
                   {track.description}
                 </p>
               </div>

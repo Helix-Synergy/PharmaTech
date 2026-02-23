@@ -123,9 +123,8 @@ const AbstractSubmission = () => {
         {status.message && (
           <div
             className={`w-full p-4 rounded-lg
-                  text-white text-center ${
-              status.type === "success" ? "bg-green-600" : "bg-red-600"
-            }`}
+                  text-white text-center ${status.type === "success" ? "bg-green-600" : "bg-red-600"
+              }`}
           >
             {status.message}
           </div>
@@ -286,11 +285,13 @@ const AbstractSubmission = () => {
           {loading ? "Submitting..." : "Submit Abstract"}
         </button>
 
-        <button className="bg-one ml-2 px-4 py-2 rounded">
-          <a href="/sample_abstract.pdf" download="" className="text-white">
-            Download Demo Abstract
-          </a>
-        </button>
+        <a
+          href="/sample_abstract.pdf"
+          download="Sample_Abstract.pdf"
+          className="bg-one ml-2 px-4 py-2 rounded text-white inline-block hover:bg-opacity-90 transition"
+        >
+          Download Demo Abstract
+        </a>
       </form>
     </div>
   );

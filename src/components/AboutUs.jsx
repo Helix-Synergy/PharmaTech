@@ -1,5 +1,5 @@
 import React from "react";
-import  about_img  from "../assets/about_img.jpg";
+import about_img from "../assets/about_img.jpg";
 import { Link } from "react-router-dom";
 
 const AboutUs = () => {
@@ -15,10 +15,10 @@ const AboutUs = () => {
       {/* Image Section */}
       <div className="flex justify-center">
         <img
-          src= {about_img}
+          src={about_img}
           alt="Dental Conference 2026"
           loading="lazy"
-          className="h-[80%] md:max-h-[100%] w-auto md:w-[80vh] md:mx-16 rounded-2xl object-cover"
+          className="h-[80%] md:max-h-[100%] w-auto md:w-[400px] md:mx-16 rounded-2xl object-cover"
         />
       </div>
 
@@ -28,7 +28,7 @@ const AboutUs = () => {
           <span className="text-one">Welcome to the Global Hub for</span>{" "}
           Pharmaceutical Innovation
         </h1>
-        <p className="text-base my-2">
+        <p className="text-base my-2 text-justify">
           Step into the future of Medicine at the Advanced Pharmaceutical Sciences Forum
           2026 a premier gathering of Pharmaceutical experts, Clinical
           Researchers, Policy-makers, and Innovators. This global platform hosts

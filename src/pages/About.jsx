@@ -123,39 +123,39 @@ const data = {
   ],
 
   highlights: [
-  {
-    title: "Keynote Speakers",
-    description: "Pharma leaders share expert insights",
-  },
-  {
-    title: "Panel Discussions",
-    description: "Debates on ethics and policy",
-  },
-  {
-    title: "Live Demonstrations",
-    description: "Tools, equipment, AI in action",
-  },
-  {
-    title: "Innovation Labs",
-    description: "Hands-on with emerging pharma tech",
-  },
-  {
-    title: "Poster Presentations",
-    description: "Research findings and clinical data",
-  },
-  {
-    title: "Workshops",
-    description: "Practical training in pharma research",
-  },
-  {
-    title: "Partnership Zones",
-    description: "Meet brands, forge strategic alliances",
-  },
-  {
-    title: "Awards & Recognition",
-    description: "Honor excellence in pharmaceutical innovation",
-  },
-],
+    {
+      title: "Keynote Speakers",
+      description: "Pharma leaders share expert insights",
+    },
+    {
+      title: "Panel Discussions",
+      description: "Debates on ethics and policy",
+    },
+    {
+      title: "Live Demonstrations",
+      description: "Tools, equipment, AI in action",
+    },
+    {
+      title: "Innovation Labs",
+      description: "Hands-on with emerging pharma tech",
+    },
+    {
+      title: "Poster Presentations",
+      description: "Research findings and clinical data",
+    },
+    {
+      title: "Workshops",
+      description: "Practical training in pharma research",
+    },
+    {
+      title: "Partnership Zones",
+      description: "Meet brands, forge strategic alliances",
+    },
+    {
+      title: "Awards & Recognition",
+      description: "Honor excellence in pharmaceutical innovation",
+    },
+  ],
 
 
   dates: {
@@ -187,7 +187,7 @@ const AboutPublicHealth = () => {
       {data.event.description.map((desc, idx) => (
         <p
           key={idx}
-          className="mb-6 text-lg leading-relaxed text-center w-full min-w-5xl px:2 md:px-12 lg:px-24"
+          className="mb-6 text-lg leading-relaxed text-justify w-full min-w-5xl px:2 md:px-12 lg:px-24"
         >
           {desc}
         </p>
@@ -231,7 +231,7 @@ const AboutPublicHealth = () => {
         {data.join.map((para, idx) => (
           <p
             key={idx}
-            className="mb-6 text-lg leading-relaxed text-center w-full min-w-5xl px:2 md:px-12 lg:px-24"
+            className="mb-6 text-lg leading-relaxed text-justify w-full min-w-5xl px:2 md:px-12 lg:px-24"
           >
             {para}
           </p>

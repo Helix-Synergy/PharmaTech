@@ -32,15 +32,14 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  
+
   return (
     <header className="bg-white sticky top-0 z-50 w-full shadow-sm">
       <div className="flex items-center justify-evenly px-2 py-2 md:py-2 transition-all duration-300">
         {/* Logo */}
         <div
-          className={`transition-all duration-300 ${
-            scrolled ? "h-20" : "h-20"
-          }`}
+          className={`transition-all duration-300 ${scrolled ? "h-20" : "h-20"
+            }`}
         >
           <img
             src={logo}
@@ -52,57 +51,55 @@ const Navbar = () => {
                 isOpen && window.innerWidth < 1024
                   ? "5rem" // smaller when burger menu is open
                   : scrolled
-                  ? "5rem"
-                  : "8rem",
+                    ? "5rem"
+                    : "8rem",
               width:
                 isOpen && window.innerWidth < 1024
                   ? "6rem"
                   : scrolled
-                  ? "6rem"
-                  : "8rem",
+                    ? "6rem"
+                    : "8rem",
               marginTop:
                 isOpen && window.innerWidth < 1024
                   ? "0.5rem"
                   : scrolled
-                  ? "0rem"
-                  : "1rem",
+                    ? "0rem"
+                    : "1rem",
               border:
                 isOpen && window.innerWidth < 1024
                   ? "none"
                   : scrolled
-                  ? "none"
-                  : "2px solid #7ab326 ",
+                    ? "none"
+                    : "2px solid #7ab326 ",
               backgroundColor:
                 isOpen && window.innerWidth < 1024
                   ? "transparent"
                   : scrolled
-                  ? "transparent"
-                  : "white",
+                    ? "transparent"
+                    : "white",
               padding:
                 isOpen && window.innerWidth < 1024
                   ? "0px"
                   : scrolled
-                  ? "0px"
-                  : "4px",
+                    ? "0px"
+                    : "4px",
             }}
           />
         </div>
 
         {/* Desktop Navigation - large screens only */}
         <nav
-          className={`hidden lg:flex justify-between items-center text-lg font-bold-100 ${
-            scrolled ? "gap-8 ml-4" : "gap-6 ml-0"
-          }`}
+          className={`hidden lg:flex justify-between items-center text-lg font-bold-100 ${scrolled ? "gap-8 ml-4" : "gap-6 ml-0"
+            }`}
         >
           {nav_links.map((item, index) => (
             <Link
               key={index}
               to={item.link}
-              className={`hover-underline-animation text-gray-700 hover:text-accent transition ${
-                location.pathname === item.link
-                  ? "border-slate-700"
-                  : "border-transparent"
-              }`}
+              className={`hover-underline-animation transition pb-1 ${location.pathname === item.link
+                ? "text-one font-bold border-b-2 border-one"
+                : "text-gray-700 hover:text-accent border-b-2 border-transparent"
+                }`}
               style={{
                 marginRight: scrolled ? "0px" : "4px",
               }}
@@ -146,7 +143,10 @@ const Navbar = () => {
             <Link
               key={index}
               to={item.link}
-              className="block text-sm text-gray-800 hover:text-accent transition"
+              className={`block text-sm transition ${location.pathname === item.link
+                  ? "text-one font-bold"
+                  : "text-gray-800 hover:text-accent"
+                }`}
               onClick={() => setIsOpen(false)}
             >
               {item.name}
