@@ -9,7 +9,7 @@ const Orators = () => {
       <h1 className="text-2xl text-one md:text-3xl font-bold text-center">
         PHARMATECH - Orators
       </h1>
-      <p className="w-full md:w-2/3 my-2 text-center text-sm md:text-base text-slate-600">
+      <p className="w-full md:w-2/3 my-2 text-justify text-sm md:text-base text-slate-600">
         Renowned experts from across the globe sharing insights and leading the conversation at PHARMATECH.
       </p>
 

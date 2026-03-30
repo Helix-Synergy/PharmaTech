@@ -103,10 +103,14 @@ const AbstractSubmission = () => {
     "Pharma Ethics",
     "Pharma Regulatory Affairs",
     "Precision Medicine",
+    "Traditional Medicine",
     "Clinical Research",
     "Drug Designing",
     "Clinical Pathology",
     "Curative Therapeutics",
+    "Gene Therapy",
+    "Digital Health",
+    "Phytotherapy",
   ];
 
   return (

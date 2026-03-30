@@ -11,7 +11,7 @@ const OraterCard = ({ image, name, about, from }) => {
         />
       </div>
       <h2 className="text-black font-bold text-md">{name}</h2>
-      <p className='text-one text-md font-semibold text-center line-clamp-3'>
+      <p className='text-one text-md font-semibold text-justify line-clamp-3'>
   {about}
 </p>
 

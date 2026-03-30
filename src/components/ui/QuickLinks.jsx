@@ -8,40 +8,46 @@ const links = [
     id: 'mobile',
     icon: Phone,
     label: 'Call Us',
-    path: 'tel:+13052398055'
+    href: 'tel:+13052398055',
+    external: true
   },
   {
     id: 'whatsapp',
     icon: WhatsAppIcon,
     label: 'WhatsApp',
-    link: 'https://api.whatsapp.com/send/?phone=13052398055&text=Hello&type=phone_number&app_absent=0'
+    href: 'https://api.whatsapp.com/send/?phone=13052398055&text=Hello&type=phone_number&app_absent=0',
+    external: true
   },
   {
     id: 'abstract-submission',
     icon: ScrollText,
     label: 'Submit Abstract',
-    link: '/abstract-submission'
+    href: '/abstract-submission',
+    external: false
   },
   {
     id: 'brochure-download',
     icon: Download,
-    label: 'Brochure download',
-    link: '/brochure-download'
+    label: 'Brochure Download',
+    href: '/PharmaTech.pdf',
+    external: true,
+    download: true
   },
   {
     id: 'event-schedule',
     icon: CalendarCheck,
     label: 'Schedule',
-    link: '/pharmaceutical-event-schedule'
+    href: '/pharmaceutical-event-schedule',
+    external: false
   },
   {
     id: 'faq',
     icon: HelpCircle,
     label: 'FAQs',
-    link: '/faq'
+    href: '/faq',
+    external: false
   }
 ];
-
 
 const QuickLinks = () => {
   const [hoveredId, setHoveredId] = useState(null);
@@ -68,28 +74,55 @@ const QuickLinks = () => {
       `}</style>
 
       <div className="fixed bottom-14 right-0 z-20 flex flex-col space-y-3">
-        {links.map(({ id, icon: Icon, label, path, link }) => {
+        {links.map(({ id, icon: Icon, label, href, external, download }) => {
           const isActive = hoveredId === id;
-          const href = path || link;
 
-          return (
-            <Link
-              key={id}
-              to={href}
-              // target="_blank"
-              rel="noopener noreferrer"
-              onMouseEnter={() => setHoveredId(id)}
-              onMouseLeave={() => setHoveredId(null)}
-              className={`flex items-center bg-white shadow-md rounded-l-full overflow-hidden transform transition-all duration-300 ${
-                isActive ? 'translate-x-0' : 'translate-x-40'
-              } ${id === 'mobile' ? 'animate-pulseShadow' : ''}`}
-            >
+          const commonClasses = `
+            flex items-center bg-white shadow-md rounded-l-full overflow-hidden 
+            transform transition-all duration-300 
+            ${isActive ? 'translate-x-0' : 'translate-x-40'}
+            ${id === 'mobile' ? 'animate-pulseShadow' : ''}
+          `;
+
+          const content = (
+            <>
               <div className="bg-one text-white p-3 flex items-center justify-center rounded-l-full transition-custom">
                 <Icon className="h-5 w-5" />
               </div>
               <span className="ml-4 pr-4 text-sm font-medium text-gray-800 whitespace-nowrap">
                 {label}
               </span>
+            </>
+          );
+
+          // External Links (Call, WhatsApp, PDF)
+          if (external) {
+            return (
+              <a
+                key={id}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                download={download ? true : undefined}
+                onMouseEnter={() => setHoveredId(id)}
+                onMouseLeave={() => setHoveredId(null)}
+                className={commonClasses}
+              >
+                {content}
+              </a>
+            );
+          }
+
+          // Internal React Routes
+          return (
+            <Link
+              key={id}
+              to={href}
+              onMouseEnter={() => setHoveredId(id)}
+              onMouseLeave={() => setHoveredId(null)}
+              className={commonClasses}
+            >
+              {content}
             </Link>
           );
         })}
